@@ -1,86 +1,42 @@
-# 💳 Credit Card Fraud Detection Using Machine Learning
+# Credit-Card-Fraud-Detection-Using-Machine-Learning
 
-## 📌 Project Overview
+ ## ABSTRACT
+Credit card fraud is a significant problem, with billions of dollars lost each year. Machine learning can be used to detect credit card fraud by identifying patterns that are indicative of fraudulent transactions. Credit card fraud refers to the physical loss of a credit card or the loss of sensitive credit card information. Many machinelearning algorithms can be used for detection. This project proposes to develop a machine-learning model to detect credit card fraud. The model will be trained on a dataset of historical credit card transactions and evaluated on a holdout dataset of unseen transactions.
+<br>
+<br>
+<b>Keywords:</b> Credit Card Fraud Detection, Fraud Detection, Fraudulent Transactions, K- Nearest Neighbors, Support Vector Machine, Logistic Regression, Decision Tree.
 
-Credit card fraud has become a major concern in the financial industry, leading to significant monetary losses every year. This project aims to detect fraudulent credit card transactions using Machine Learning techniques and data analysis.
+<br>
+<br>
 
-The model analyzes transaction patterns and classifies transactions as either **Legitimate** or **Fraudulent**, helping financial institutions identify suspicious activities in real-time.
 
----
+## Project goals
 
-## 🎯 Objectives
+The main aim of this project is the detection of fraudulent credit card transactions, as it is essential to figure out the fraudulent transactions so that customers do not get charged for the purchase of products that they did not buy. Fraudulent Credit card transactions will be detected with multiple ML techniques. Then, a comparison will be made between the outcomes and results of each method to find the best and most suited model for detecting fraudulent credit card transactions; graphs and numbers will also be provided. In addition, it explores previous literature and different
+techniques used to distinguish Fraud within a dataset.
 
-- Detect fraudulent credit card transactions accurately.
-- Handle highly imbalanced transaction data.
-- Compare different machine learning algorithms.
-- Evaluate model performance using multiple metrics.
-- Build a scalable fraud detection pipeline.
 
----
+<br>
+<br>
 
-## 📂 Dataset
+## Data Source
 
-The dataset contains anonymized credit card transactions made by European cardholders.
+The dataset was retrieved from an open-source website, Kaggle.com. It contains data on transactions made in 2013 by European credit card users in two days only. Thedataset consists of 31 attributes and 284,808 rows. Twenty-eight attributes are numeric variables that, due to the confidentiality and privacy of the customers, have been transformed using PCA transformation; the three remaining attributes are ”Time”, which contains the elapsed seconds between the first and other transactions
+of each Attribute, ”Amount” is the amount of each transaction, and the final attribute “Class” which contains binary variableswhere “1” is a case of fraudulent transaction, and “0” is not as case of fraudulent transaction.
+<br>
+<br>
+<b>Dataset: </b>
+<a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud">kaggle Dataset</a>
 
-### Features
-- 28 anonymized features (V1 - V28)
-- Time
-- Amount
-- Class
+<br>
+<br>
 
-### Target Variable
-- **Class = 0** → Legitimate Transaction
-- **Class = 1** → Fraudulent Transaction
+## Algorithm 
+1. K-Nearest Neighbor (KNN)
+2. Logistic Regression (L.R.)
+3. Support Vector Machine (SVM)
+4. Decision Tree (D.T.)
 
----
 
-## 🛠️ Technologies Used
-
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-
----
-
-## 📊 Project Workflow
-
-### 1. Data Collection
-- Import dataset
-- Load transaction records
-
-### 2. Data Preprocessing
-- Handle missing values
-- Feature selection
-- Data normalization
-
-### 3. Exploratory Data Analysis (EDA)
-- Fraud vs Non-Fraud distribution
-- Correlation analysis
-- Transaction amount visualization
-
-### 4. Data Splitting
-- Training Set
-- Testing Set
-
-### 5. Model Building
-- Logistic Regression
-
-### 6. Model Evaluation
-- Accuracy Score
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-
----
-
-## 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/Credit-Card-Fraud-Detection.git
+<br>
+<br>
